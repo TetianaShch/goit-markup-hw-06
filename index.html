@@ -55,18 +55,105 @@
             </li>
           </ul>
         </address>
+        <button class="burger-button" type="button">
+          <svg class="burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+              </button>
       </div>
+      <div class="mobile-menu is-open">
+        <div class="container menu-container">
+        <button class="button-close" type="button">
+          <svg class="modal-button-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="menu-navigation">
+          <ul class="menu-navigation-list">
+            <li>
+              <a href="./index.html" class="menu-navigation-item"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="" class="menu-navigation-item">Portfolio</a>
+            </li>
+            <li>
+              <a href="" class="menu-navigation-item">Contacts</a>
+            </li>
+          </ul>
+          </div>
+          <address class="menu-address">
+          <ul class="menu-address-contacts">
+            <li>
+              <a href="tel:+110001111111" class="menu-address-contacts-info">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="menu-address-contacts-info">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+        <div class="menu-social-link">
+            <ul class="menu-social-link-list">
+                  <li class="social-link">
+                    <a
+                      class="social-link-list"
+                      href="https://instagram.com"
+                    >
+                      <svg class="link-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-link">
+                    <a
+                      class="social-link-list"
+                      href="https://twitter.com"
+                    >
+                      <svg class="link-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-link">
+                    <a
+                      class="social-link-list"
+                      href="https://facebook.com"
+                    >
+                      <svg class="link-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-link">
+                    <a
+                      class="social-link-list"
+                      href="https://linkedin.com/"
+                    >
+                      <svg class="link-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+              </ul> 
+              </div>  
+              </div>     
+          </div>
     </header>
     <main>
       <!--Hero banner-->
-      <section class="hero" id="hero-banner">
+      <section class="hero" id="hero-banner" hidden>
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button" type="button">Order Service</button>
         </div>
       </section>
       <!--Work ethic-->
-      <section class="benefits" id="work-ethic">
+      <section class="benefits" id="work-ethic" hidden>
         <div class="container benefits-container">
           <h2 class="benefits-title visually-hidden">Work ethic</h2>
           <ul class="benefits-list">
@@ -122,7 +209,7 @@
         </div>
       </section>
       <!--Our Team-->
-      <section class="team" id="our-team">
+      <section class="team" id="our-team" hidden>
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -350,7 +437,7 @@
         </div>
       </section>
       <!--Our Portfolio-->
-      <section class="portfolio" id="portfolio">
+      <section class="portfolio" id="portfolio" hidden>
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -478,7 +565,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" hidden>
       <div class="container footer-container">
         <div class="container-logo">
           <a href="./index.html" class="footer-logo"
@@ -539,7 +626,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop" hidden>
       <div class="modal">
           <button class="modal-button" type="button">
             <svg class="modal-button-icon" width="8" height="8">
