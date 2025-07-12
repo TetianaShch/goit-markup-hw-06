@@ -381,7 +381,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 100%;
     padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -463,7 +463,7 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
   width: 208px;
-  margin-bottom: 16px;
+  margin-bottom:16px;
   text-align: center;
 }
 
@@ -561,11 +561,15 @@ button {
     justify-content: flex-start;
     text-align: start;
   }
+  
+  .footer-nav{
+    margin-top: 16px;
+    justify-content: flex-start;
+  }
 
   .footer-nav-text {
     text-align: start;
     width: 264px;
-    margin-bottom: 0;
   }
 
   .form-mail {
@@ -608,7 +612,6 @@ button {
   }
 
   .footer-nav-text {
-    margin-bottom: 16px;
     width: 208px;
   }
 
