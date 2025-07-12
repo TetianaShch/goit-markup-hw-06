@@ -471,7 +471,6 @@ button {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-nav-list-link {
@@ -513,9 +512,8 @@ button {
   font-size: 12px;
   line-height: 200%;
   letter-spacing: 0.04em;
-  padding-left: 16px;
   color: #ffffff;
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -527,6 +525,7 @@ button {
 .form-mail-input::placeholder {
   color: #ffffff;
   opacity: 1;
+  padding-left: 16px;
 }
 
 .form-button {
@@ -551,9 +550,70 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    max-width: 768px;
+  .footer-container {
+    justify-content: flex-start;
+    text-align: start;
+    padding-left: 108px;
+  }
+
+  .footer-logo,
+  .form-subtitle {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .footer-nav-text {
+    text-align: start;
+    width: 264px;
+    margin-bottom: 0;
+  }
+
+  .form-mail {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-mail-input {
+    width: 264px;
+  }
+
+  .form-mail-input::placeholder {
+    opacity: 0.6;
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .footer {
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 100px 0;
+  }
+
+  .container-logo {
+    margin-right: 120px;
+  }
+
+  .container-link {
+    margin-right: 80px;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .footer-nav-text {
+    margin-bottom: 16px;
+    width: 208px;
+  }
+
+  .form-mail-input::placeholder {
+    opacity: 1;
+  }
+}
 /*#endregion footer*/
