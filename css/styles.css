@@ -389,6 +389,7 @@ button {
       ),
       url(../images/office2x.jpg);
   }
+
   .hero-title {
     max-width: 496px;
     margin: 0 auto 36px;
@@ -406,7 +407,6 @@ button {
     font-size: 56px;
     line-height: 107%;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #ffffff;
     margin: 0 auto 48px;
   }
@@ -635,14 +635,14 @@ button {
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 4px;
+  opacity: 0.3;
   background-color: transparent;
   outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .form-mail-input::placeholder {
-  color: #ffffff;
-  opacity: 1;
+  color: #ffffff;  
   padding-left: 16px;
 }
 
@@ -700,44 +700,33 @@ button {
     width: 264px;
   }
 
-  .form-mail-input::placeholder {
-    opacity: 0.6;
-  }
+
 }
 
 @media screen and (min-width: 1158px) {
-  .footer {
-  }
-
-  .footer-container {
+  .footer-container{
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    justify-content: flex-start;
     padding: 100px 0;
-  }
-
-  .container-logo {
-    margin-right: 120px;
-  }
-
-  .container-link {
-    margin-right: 80px;
-  }
-
-  .footer-nav {
-    display: flex;
-    justify-content: flex-start;
-    gap: 24px;
-  }
-
-  .footer-nav-text {
-    width: 208px;
-  }
-
-  .form-mail-input::placeholder {
-    opacity: 1;
-  }
 }
+
+.footer-logo-text{
+    width: 264px;
+}
+
+  .form-mail{
+    flex-direction: row;
+}
+
+.form-mail-input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+
+}
+
 /*#endregion footer*/
 
 .visually-hidden {
