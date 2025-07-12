@@ -442,7 +442,7 @@ button {
 }
 
 .benefits-subtitle-text {
-  font-size: 500;
+  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
@@ -452,7 +452,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .benefits-subtitle-text {
-    font-size: 400;
+    font-weight: 400;
   }
   
   .benefits-list{
