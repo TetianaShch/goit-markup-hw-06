@@ -60,7 +60,7 @@ button {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
+    margin: 0 15px;
   }
 }
 /*#endregion common*/
@@ -335,7 +335,7 @@ button {
 
 .hero {
   background-color: #2e2f42;
-  max-width: 320px;
+  max-width: 100%;
   padding: 72px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -345,6 +345,15 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-resolution: 192dpi){
+    .hero{
+  background-image:linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+     url(../images/office2x.jpg);
+    }
 }
 
 .hero-title {
@@ -391,6 +400,8 @@ button {
   }
 
   .hero-title {
+    font-size: 56px;
+    line-height: 107%;
     max-width: 496px;
     margin: 0 auto 36px;
   }
@@ -756,17 +767,15 @@ button {
 /*#endregion portfolio*/
 
 /*#region footer*/
+.footer {
+  background-color: #2e2f42;
+}
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 96px 16px;
-}
-
-.footer {
-  background-color: #2e2f42;
-  margin: 0 auto;
 }
 
 .footer-logo {
