@@ -194,7 +194,7 @@ img {
 }
 /*#endregion hero section*/
 
-/*#region benefits section*/
+/*#region benefits section*
 
 .benefits,
 .team,
@@ -267,7 +267,7 @@ img {
 }
 /*#endregion benefits section*/ 
 
-/*#region team section*/
+/*#region team section*
 .team{
     background-color:#f4f4fd;
 }
@@ -320,7 +320,7 @@ img {
 }
 /*#endregion team section*/
 
-/*#region portfolio section*/
+/*#region portfolio section*
 
 .portfolio-image{
     box-sizing: border-box;
@@ -504,7 +504,7 @@ margin-right: 80px;
 .form-button-send{
     margin-left: 16px;
 }
-/*#endregion footer */
+/*#endregion footer *
 
 .visually-hidden{
     position: absolute;
